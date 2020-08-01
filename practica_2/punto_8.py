@@ -15,13 +15,25 @@
 
 palabra = str(input("ingrese una palabra "))
 
-dic = {"a": 0}
+dic = {}
 
 for letra in palabra:
-    if dic.has_key(letra):
-        dic[letra] += 1
-    else:
+    if dic.get(letra) == None: # otra opcion: if letra in dic.keys(): dic[letra] += 1 ; else: dic[letra] = 1
         dic[letra] = 1
+    else:
+        dic[letra] += 1
 
-for key, num in dic:
-    pass
+for key, values in dic.items():
+    if values >= 1:
+        ok = True
+        for i in range(2, values):
+            if values % i == 0:
+                ok = False
+    else:
+        ok = False
+    if ok:
+        print("la letra {} es prima({})".format(key, values))
+    else:
+        print("la letra {} no es prima({})".format(key, values))
+        
+        
