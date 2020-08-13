@@ -96,13 +96,13 @@ print(jugadores)
 ###############################################################################
 # PARTE 6:
 
+
+
 rankig = 10 # proximamente lambda....
 
-lambda dic: nuevo = []
-            for nom in dic.items():
+lista = []
 
-
-
+lista = jugadores
 
 
 
