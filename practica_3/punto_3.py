@@ -95,6 +95,35 @@ print(jugadores)
 
 ###############################################################################
 # PARTE 6:
+
+rankig = 10 # proximamente lambda....
+
+lambda dic: nuevo = []
+            for nom in dic.items():
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 """
 ¡¡¡ESTO ES LO QUE PIENSO DE TUS FUNCIONES LAMBDA DE MIERDA!!!
 
