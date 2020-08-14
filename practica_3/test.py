@@ -23,4 +23,4 @@ lista = jugadores
 
 aux = []
 
-aux = sorted(lista,lambda lista: lista["punt"])
+aux = sorted(lista, key = lambda listas: listas[])

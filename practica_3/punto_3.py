@@ -102,7 +102,7 @@ rankig = 10 # proximamente lambda....
 
 lista = []
 
-lista = jugadores
+lista = sorted(jugadores, key = lambda 
 
 
 
