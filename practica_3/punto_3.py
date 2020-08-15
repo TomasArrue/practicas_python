@@ -52,12 +52,12 @@ cargar_jugador(jugadores)
 ###############################################################################
 # PARTE 2:
 
-print(jugadores)
+#print(jugadores)
 
 ###############################################################################
 # PARTE 3:
 
-print(jugadores.keys())
+#print(jugadores.keys())
 
 ###############################################################################
 # PARTE 4:
@@ -76,7 +76,7 @@ for key,values in jugadores.items():
         jug_max["puntos"] = values["punt"]
         jug_max["tiempo"] = values["time"]
 
-print(jug_max)
+#print(jug_max)
 
 ###############################################################################
 # PARTE 5:
@@ -84,77 +84,23 @@ print(jug_max)
 actualizar = {}
 
 print("actualizar jugador...")
-cargar_jugador(actualizar)
+#cargar_jugador(actualizar)
 
-for key,values in actualizar.items():
-    if key in jugadores.keys():
-        for llave,valor in values.items():
-            jugadores[key][llave] = valor
+#for key,values in actualizar.items():
+#    if key in jugadores.keys():
+#        for llave,valor in values.items():
+#            jugadores[key][llave] = valor
 
-print(jugadores)
+#print(jugadores)
 
 ###############################################################################
 # PARTE 6:
 
+print(sorted(jugadores.items(), key = lambda lista: lista[1]["punt"],
+             reverse = True))
 
-
-rankig = 10 # proximamente lambda....
-
-lista = []
-
-lista = sorted(jugadores, key = lambda 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-"""
-¡¡¡ESTO ES LO QUE PIENSO DE TUS FUNCIONES LAMBDA DE MIERDA!!!
-
-                          .-.                         
-                          | |                        
-                          | |                          
-                         _| |_                       
-                        | | | |-.                   
-                       /|     ` |                 
-                      | |       |              
-                      |         |           
-                      \         /            
-                       |       |                    
-                       |       |
-
-
-
-
-
-                #                            #
-                ##                          ##
-                ###                        ###
-                ####      ##########      ####
-                #####    ## #    # ##    #####
-                ######  ##   ####   ##  ######
-                #############    #############
-                ######  ##   ####   ##  ######
-                #####    ## #    # ##    #####
-                ####      ##########      ####
-                ###                        ###
-                ##                          ##
-                #                            #
-"""
+# imprimir hasta 10:
+# lista = sorted(jugadores.items(), key = lambda lista: lista[1]["punt"],
+#                reverse = True))
+# lista[:10]
 ############################### FIN ###########################################

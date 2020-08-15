@@ -12,6 +12,8 @@
     Nota: consultar el uso de enumerate.
 """
 def imprimir(*jugadores):
-    print(list(enumerate(jugadores)))
+    for cont, elem in enumerate(jugadores):
+        print(cont,elem)
 
-imprimir(["tom","dani","luqui","pepe"])
+
+imprimir("tom","dani","luqui","pepe")

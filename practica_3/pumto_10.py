@@ -9,3 +9,12 @@
 
     Nota: investigar la función reduce del módulo functools
 """
+from functools import reduce
+
+def fun(opercion, *numeros, **kward):
+    if opercion == "+":
+        print(reduce(lambda x, y: x+y, numeros))
+    else:
+        print(reduce(lambda x, y: x*y, numeros))
+
+fun("*",1,2,3,4)

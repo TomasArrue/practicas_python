@@ -26,3 +26,8 @@ for key,values in anim.items():
         print(x,end="")
         print(" ",end="")
     print("")
+
+#    for key,values in anim.items():
+#        animal = list(key)
+#        for x in range(len(animal)):
+#            print((animal[x] + " ") if x == values  else ("_ "))
